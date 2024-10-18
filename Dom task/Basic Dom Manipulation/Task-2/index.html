@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom task-2</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li id="list1" onclick="italic('list1')">Rm</li>
+            <li id="list2" onclick="italic('list2')">jin</li>
+            <li id="list3" onclick="italic('list3')">v</li>
+            <li id="list4" onclick="italic('list4')">Jk</li>
+            <li id="list5" onclick="italic('list5')">suga</li>
+            <li id="list6" onclick="italic('list6')">J-hope</li>
+        </ul>
+    </div>
+
+    <script>
+        
+
+        function italic(id) {
+            const element = document.getElementById(id);
+            element.style.fontStyle = "italic";
+        }
+       
+
+    </script>
+</body>
+</html>

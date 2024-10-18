@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-3 form</title>
+</head>
+<body>
+    <form>
+        <span for="name">name:</span>
+        <input type="text" id="name">
+        <input type="button" value="Submit" onclick="handleForm()">
+    </form>
+
+    <p id="text"></p>
+
+    <script>
+        const text = document.getElementById('text');
+        const input = document.getElementById('name');
+        function handleForm() {
+            console.log(text);
+           text.innerHTML= input.value;
+           console.log(input.value);
+           
+        }
+    </script>
+</body>
+</html>
